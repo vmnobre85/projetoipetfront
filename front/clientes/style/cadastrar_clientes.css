@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pagina-inicial {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+}
+
+.apresentacao-tela-principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-opcoes-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: steelblue;
+    text-align: center;
+    height: 4rem;
+    width: 78rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.btn-navbar {
+    border: 2px solid;
+    background-color: white;
+    gap: 1;
+    margin: 0px 1rem;
+    border-radius: 23px;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-responsivo {
+    box-shadow: 0px 4px 9px black;
+    background-color: steelblue;
+    z-index: 1;
+}
+
+.foto-perfil {
+    width: 70px;
+    height: 50px;
+}
+
+.icones-foto {
+    font-size: 25px;
+}
+
+.nomes {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    color: #231EFF;
+}
+
+.apresentacoes-clientes-cadastrar {
+    width: 76rem;
+    height: 42rem;
+    background-color: white;
+    box-shadow: 0px 4px 9px black;
+    margin-bottom: 2px;
+}
+
+.titulo-apresentacao {
+    background-color: steelblue;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.texto-apresentacao {
+    color: #F6F6F6;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+}
+
+.identificadores {
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.identificacao1, .identificacao2, .identificacao3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.campo-conteudo-identificacao1 {
+    width: 340px;
+    height: 32px;
+}
+
+.campo-conteudo-identificacao2 {
+    Width: 460px;
+    Height: 32px;
+}
+
+.campo-conteudo-identificacao3 {
+    Width: 12.6rem;
+    Height: 32px;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+/* Remove as setas de incremento/decremento */
+.campo-conteudo-identificacao3::-webkit-inner-spin-button,
+.campo-conteudo-identificacao3::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+
+
+.campos-estilizado {
+    border: 3px solid #231EFF2B;
+    border-left: 12px solid #231EFF2B;
+    border-right: 12px solid #231EFF2B;
+    padding: 0 10px;
+}
+.campos-estilizado:focus-visible{
+    outline: none;
+}
+
+.campos-estilizado-bloqueado {
+    border: 3px solid #231EFF2B;
+    border-left: 12px solid #231EFF2B;
+    border-right: 12px solid #231EFF2B;
+    background-color: darkgrey;
+    padding: 0 10px;
+}
+
+.identificadores-secundarios, .identificadores-tercearios {
+    display: flex;
+    padding: 1rem;
+    gap: 1.7rem;
+}
+
+.identificacao-secundaria1, .identificacao-secundaria2,.identificacao-terceario1,
+.identificacao-terceario2, .identificacao-terceario3{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.campo-conteudo-secundario1 {
+    width: 55.5rem;
+    height: 32px;
+}
+
+.campo-conteudo-secundario2 {
+    width: 12.5rem;
+    height: 32px;
+}
+
+
+.campo-conteudo-terceario1 {
+    width: 10.5rem;
+    height: 32px;
+}
+
+
+.campo-conteudo-terceario2 {
+    width: 25.5rem;
+    height: 32px;
+}
+
+.campo-conteudo-terceario3 {
+    width: 29.2rem;
+    height: 32px;
+}
+
+.identificadores-quaternarios {
+    display: flex;
+    padding: 1rem;
+    gap: 1.7rem;
+}
+
+.identificacao-quaternario1,
+.identificacao-quaternario2,
+.identificacao-quaternario3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.campo-conteudo-quaternario1 {
+    width: 12.5rem;
+    height: 7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.campo-conteudo-quaternario1-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.campo-conteudo-quaternario1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+.campo-conteudo-quaternario2 {
+    width: 10.2rem;
+    height: 32px;
+}
+
+.campo-conteudo-quaternario3 {
+    width: 22.2rem;
+    height: 32px;
+}
+
+.botao-cadastrar-cliente {
+    font-size: 26px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    padding: 0% 4%;
+    gap: 16px;
+}
+
+.conteudo-botao {
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #231EFF;
+    width: 18rem;
+    height: 3rem;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-botao:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+
+.nomes-modal {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #231EFF;
+}
+
+.final {
+    background-color: steelblue;
+    height: 2rem;
+    margin: 0 0rem;
+    width: 79rem;
+}
+
+@media (width<=1172px) {
+    .apresentacao-tela-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn-navbar {
+        width: 100%;
+    }
+
+    .apresentacoes-clientes-cadastrar {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: 0px 4px 9px black;
+        margin-bottom: 3%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .menu-opcoes-inicial {
+
+        margin: 0% 0%;
+        width: 123%;
+        margin-bottom: 3%;
+    }
+
+    .identificadores,
+    .identificadores-secundarios,
+    .identificadores-tercearios,
+    .identificadores-quaternarios {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0% 1%;
+    }
+
+    .campo-conteudo-identificacao1,
+    .campo-conteudo-identificacao2,
+    .campo-conteudo-identificacao3,
+    .campo-conteudo-secundario1,
+    .campo-conteudo-secundario2,
+    .campo-conteudo-terceario1,
+    .campo-conteudo-terceario2,
+    .campo-conteudo-terceario3,
+    .campo-conteudo-quaternario1,
+    .campo-conteudo-quaternario1-input,
+    .campo-conteudo-quaternario2,
+    .campo-conteudo-quaternario2,
+    .campo-conteudo-quaternario3 {
+        width: 50%;
+    }
+
+    .botao-cadastrar-cliente {
+        width: 90%;
+        padding: 2% 0%;
+
+    }
+
+    .opcoes-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .nomes{
+        font-size: 12px;
+    }
+    .conteudo-botao{
+        font-size: 16px;
+    }
+    .final {
+        width: 100%;
+        margin: 0% 0%;
+    }
+}
+
+@media (width<=991px) {
+    .foto-perfil {
+        display: none;
+    }
+
+    .separa {
+        display: none;
+    }
+
+    .menu-opcoes-inicial {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}

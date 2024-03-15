@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Perfil</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="../config/configAcessAPI.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link href="/perfil/perfil.html" />
+    <link href="./style/perfil.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="pagina-inicial">
+    <header class="d-flex justify-content-center">
+      <nav class="navbar navbar-expand-lg menu-opcoes-inicial">
+        <div class="container-fluid btn-responsivo">
+          <a
+            class="navbar-brand"
+            style="display: flex; align-items: center; color: white"
+            href="./../principais/incial.html"
+          >
+            <img
+              src="../assets/Vector.png"
+              width="60"
+              height="80"
+              class="d-inline-block align-top foto-perfil"
+              alt=""
+            />Ipet
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav opcoes-navbar">
+              <li class="nav-item active">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../principais/incial.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../servicos_produtos/servicos.html"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../clientes/clientes.html"
+                  >Clientes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../configuracoes/configuracoes.html"
+                  >Configurações</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  style="background-color: darkgray"
+                  href="./../perfil/perfil.html"
+                  >Perfil</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="apresentacao-tela-principal justify-content-center">
+      <div class="apresentacao-perfil">
+        <div class="titulo-apresentacao">
+          <h2 class="texto-apresentacao">Perfil da empresa</h2>
+        </div>
+        <div class="identificadores">
+          <div class="identificacao1">
+            <h2 class="nomes">Nome:</h2>
+            <input
+              id="input-nome"
+              class="campo-conteudo-identificacao1 campos-estilizado"
+              type="text"
+            />
+          </div>
+          <div class="identificacao2">
+            <h2 class="nomes">Email:</h2>
+            <input
+              id="input-email"
+              class="campo-conteudo-identificacao2 campos-estilizado"
+              type="email"
+            />
+          </div>
+          <div class="identificacao3">
+            <h2 class="nomes">Telefone:</h2>
+
+            <input
+              id="input-telefone"
+              class="campo-conteudo-identificacao3 campos-estilizado"
+              type="text"
+              oninput="formatTelefone(this)"
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+              placeholder="(85)99999-9999"
+              maxlength="13  "
+            />
+          </div>
+        </div>
+        <div class="identificadores-secundarios">
+          <div class="identificacao-secundaria1">
+            <h2 class="nomes">Descrição:</h2>
+            <textarea
+              id="input-descricao"
+              class="campo-conteudo-secundario1 campos-estilizado"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <div class="botao-cadastrar-perfil">
+          <a id="btn-salvar" href="#" class="conteudo-botao">Salvar</a>
+        </div>
+      </div>
+    </main>
+    <div class="d-flex w-100 justify-content-center">
+      <footer class="final">
+        <div class="final"></div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function formatTelefone(input) {
+        let value = input.value.replace(/\D/g, "");
+
+        if (value.length > 2) {
+          value = value.replace(/^(\d{2})/, "($1)");
+        }
+        if (value.length > 7) {
+          value = value.replace(/^(\d{2})(\d{4})(\d{1,4})/, "($1) $2-$3");
+        }
+        input.value = value;
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/perfil.js"></script>
+  </body>
+</html>

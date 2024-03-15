@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Serviços</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="../config/configAcessAPI.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link href="/servicos_produtos/servicos.html" />
+    <link href="./style/style_servicos_produtos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="pagina-inicial-servicos">
+    <header class="d-flex justify-content-center">
+      <nav class="navbar navbar-expand-lg menu-opcoes-inicial">
+        <div class="container-fluid btn-responsivo">
+          <a
+            class="navbar-brand"
+            style="display: flex; align-items: center; color: white"
+            href="./../principais/incial.html"
+          >
+            <img
+              src="../assets/Vector.png"
+              width="60"
+              height="80"
+              class="d-inline-block align-top foto-perfil"
+              alt=""
+            />Ipet
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav opcoes-navbar">
+              <li class="nav-item active">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../principais/incial.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  style="background-color: darkgray"
+                  href="./../servicos_produtos/servicos.html"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../clientes/clientes.html"
+                  >Clientes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-navbar"
+                  href="./../configuracoes/configuracoes.html"
+                  >Configurações</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-navbar" href="./../perfil/perfil.html"
+                  >Perfil</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="apresentacao-tela-principal justify-content-center">
+      <div class="apresentacoes-produtos-cadastrar">
+        <div class="titulo-apresentacao">
+          <h2 class="texto-apresentacao">Manutenção de serviços e produtos</h2>
+        </div>
+        <div class="botao-cadastrar">
+          <a
+            href="cadastrar_produto.html"
+            class="conteudo-botao"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            >Cadastrar</a
+          >
+        </div>
+        <div class="lista-produtos">
+          <table>
+            <tbody id="tabelaProdutosServicosBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div class="d-flex w-100 justify-content-center">
+      <footer class="final">
+        <div class="final"></div>
+      </footer>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg justify-content-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body alling-itens-center justify-content-center">
+            <h2 class="nomes-modal">O que deseja cadastrar ?</h2>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn botao-cadastrar-cliente"
+              data-bs-dismiss="modal"
+            >
+              <a href="cadastrar_produto.html" class="conteudo-botao"
+                >Produto</a
+              >
+            </button>
+            <button type="button" class="btn botao-cadastrar-produto">
+              <a href="cadastrar_servico.html" class="conteudo-botao"
+                >Serviço
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="excluirModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg justify-content-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body alling-itens-center justify-content-center">
+            <h2 class="nomes-modal">Tem certeza que deseja excluir o item ?</h2>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              id="botaoConfirmarExclusao"
+              type="button"
+              class="btn botao-cadastrar-servico"
+              data-bs-dismiss="modal"
+            >
+              <a href="#" class="conteudo-botao">Sim</a>
+            </button>
+
+            <button type="button" class="btn botao-cadastrar-produto">
+              <a href="servicos.html" class="conteudo-botao">Não </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/produto/excluirProduto.js"></script>
+    <script src="./js/listarProdutosServicos.js"></script>
+  </body>
+</html>

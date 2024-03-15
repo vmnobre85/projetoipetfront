@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pagina-inicial-configuracoes {
+    background-color: lavender;
+}
+
+.menu-opcoes-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: steelblue;
+    text-align: center;
+    height: 4rem;
+    width: 78rem;
+
+    font-family: 'Krona One', sans-serif;
+}
+
+.btn-navbar {
+    border: 2px solid;
+    background-color: white;
+    gap: 1;
+    margin: 0px 1rem;
+    border-radius: 23px;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-responsivo {
+    box-shadow: 0px 4px 9px black;
+    background-color: steelblue;
+    z-index: 1;
+}
+
+.texto-barra-login {
+    font-family: 'Krona One', sans-serif;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    color: #F6F6F6;
+    padding: 0 0%;
+}
+
+.foto-perfil {
+    width: 70px;
+    height: 50px;
+}
+
+.apresentacao-tela-principal {
+    align-items: center;
+    padding: 0% 5%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+
+.apresentacoes-configuracoes {
+    width: 76rem;
+    height: 38.8rem;
+    background-color: white;
+    box-shadow: 0px 4px 9px black;
+    margin-bottom: 2px;
+}
+
+.nomes {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    color: #231EFF;
+}
+
+.titulo-apresentacao {
+    background-color: steelblue;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.texto-apresentacao {
+    color: #F6F6F6;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+}
+
+.identificadores {
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.identificacao1,
+.identificacao2,
+.identificacao3,
+.identificacao-secundaria1,
+.identificacao-secundaria2,
+.identificacao-terceario1,
+.identificacao-terceario2,
+.identificacao-terceario3,
+.identificacao-quaternario1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.conteudo-identificacao {
+    display: flex;
+    padding: 10px;
+    gap: 5rem;
+}
+
+.campo-conteudo-identificacao1 {
+    width: 340px;
+    height: 32px;
+}
+
+.campo-conteudo-identificacao2 {
+    Width: 460px;
+    Height: 32px;
+}
+
+.campo-conteudo-identificacao3 {
+    Width: 12.6rem;
+    Height: 32px;
+}
+
+.identificadores-secundarios {
+    display: flex;
+    padding: 1rem;
+    gap: 1.7rem;
+}
+
+.campo-conteudo-secundario1 {
+    width: 71.5rem;
+    height: 32px;
+}
+
+.campo-conteudo-secundario2 {
+    width: 12.5rem;
+    height: 32px;
+}
+
+.identificadores-tercearios {
+    display: flex;
+    padding: 1rem;
+    gap: 11.4rem;
+}
+
+.campo-conteudo-terceario1 {
+    width: 12.5rem;
+    height: 32px;
+}
+
+.campo-conteudo-terceario2 {
+    width: 20.9rem;
+    height: 32px;
+}
+
+.campo-conteudo-terceario3 {
+    width: 12.7rem;
+    height: 32px;
+}
+
+.identificadores-quaternarios {
+    display: flex;
+    padding: 1rem;
+    gap: 1.7rem;
+
+}
+
+.campo-conteudo-quaternario1 {
+    width: 12.5rem;
+    height: 7rem;
+}
+
+.campo-conteudo-quaternario1 {
+    display: inline-block;
+    width: 71.5rem;
+    height: 32px;
+    text-align: center;
+    line-height: 7rem;
+}
+
+.botao-cadastrar-configuracoes {
+    font-size: 26px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    width: 75rem;
+
+
+}
+
+.botao-cadastrar {
+    font-size: 26px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    padding: 0% 4%;
+    gap: 16px;
+}
+
+.conteudo-botao {
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #231EFF;
+    width: 18rem;
+    height: 3rem;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo-botao:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+
+.campos-estilizado {
+    border: 3px solid #231EFF2B;
+    border-left: 12px solid #231EFF2B;
+    border-right: 12px solid #231EFF2B;
+    padding: 0 10px;
+}
+
+.campos-estilizado-bloqueado {
+    border: 3px solid #231EFF2B;
+    border-left: 12px solid #231EFF2B;
+    border-right: 12px solid #231EFF2B;
+    background-color: darkgrey;
+    padding: 0 10px;
+}
+
+.campos-estilizado:focus-visible {
+    outline: none;
+}
+
+.final {
+    background-color: steelblue;
+    height: 2rem;
+    margin: 0 0rem;
+    width: 79rem;
+}
+
+@media (width<=1172px) {
+
+    .apresentacoes-configuracoes {
+        width: 100%;
+
+        margin-bottom: 11%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .identificacao1,
+    .identificacao2,
+    .identificaca3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .identificadores {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+
+
+    }
+
+    .identificadores-secundarios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        padding: 0 2%;
+
+    }
+
+    .identificacao-secundaria1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .identificadores-tercearios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 2%;
+
+    }
+
+    .identificadores-quaternarios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        padding: 0 2%;
+    }
+
+
+    .texto-apresentacao {
+        font-size: 100%;
+    }
+
+    .menu-opcoes-inicial {
+
+        margin: 0% 0%;
+        width: 123%;
+        margin-bottom: 5%;
+    }
+    .btn-navbar {
+        width: 100%;
+        margin: 0 0.5rem;
+    }
+
+    .opcoes-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .conteudo-botao {
+        font-size: 16px;
+    }
+
+    .final {
+
+        width: 100%;
+        margin: 0% 0%;
+    }
+
+    .apresentacao-tela-principal {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .campo-conteudo-identificacao1 {
+        width: 50%;
+        height: 32px;
+
+    }
+
+    .campo-conteudo-identificacao2 {
+        Width: 50%;
+        Height: 32px;
+    }
+
+    .campo-conteudo-identificacao3 {
+        Width: 50%;
+        Height: 32px;
+    }
+
+    .campo-conteudo-terceario1 {
+        width: 50%;
+        height: 32px;
+
+
+    }
+
+    .campo-conteudo-terceario2 {
+        width: 50%;
+        height: 32px;
+
+
+    }
+
+    .campo-conteudo-terceario3 {
+        width: 50%;
+        height: 32px;
+
+
+    }
+
+    .campo-conteudo-secundario1 {
+        width: 50%;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .campo-conteudo-quaternario1 {
+        width: 50%;
+        height: 32px;
+
+
+    }
+
+    .botao-cadastrar-configuracoes {
+
+        display: flex;
+        padding: 3% 2%;
+        justify-content: end;
+        width: auto;
+    }
+
+    .conteudo-botao {
+        width: 50%;
+
+    }
+
+    .identificadores {
+
+        display: flex;
+
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+    .nomes {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media (width<=991px) {
+    .foto-perfil {
+        display: none;
+    }
+
+    .separa {
+        display: none;
+    }
+
+    .menu-opcoes-inicial {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}

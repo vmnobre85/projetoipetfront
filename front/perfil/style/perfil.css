@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 80vh;
+    background-color: #231EFF;
+}
+
+.pagina-inicial {
+    background-color: lavender;
+}
+
+.botao-cadastrar-perfil {
+    font-size: 26px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    width: 75rem;
+
+
+}
+
+.conteudo-botao {
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #231EFF;
+    width: 18rem;
+    height: 3rem;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo-botao:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+.menu-opcoes-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: steelblue;
+    text-align: center;
+    height: 4rem;
+    width: 78rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.btn-navbar {
+    border: 2px solid;
+    background-color: white;
+    gap: 1;
+    margin: 0px 1rem;
+    border-radius: 23px;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-opcoes-inicio {
+    background-color: steelblue;
+    margin-bottom: 20px;
+}
+
+.menu-opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    height: 4rem;
+    width: 12rem;
+    margin: 0px 9px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.nomes {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    color: #231EFF;
+}
+
+.texto-barra-login {
+    font-family: 'Krona One', sans-serif;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    color: #F6F6F6;
+    padding: 0 0%;
+}
+
+.apresentacao-tela-principal {
+    align-items: center;
+    padding: 0% 5%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+
+.apresentacao-perfil {
+    width: 76rem;
+    height: 42rem;
+    background-color: white;
+    box-shadow: 0px 4px 9px black;
+    margin-bottom: 2px;
+}
+
+.titulo-apresentacao {
+    background-color: steelblue;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.texto-apresentacao {
+    color: #F6F6F6;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+}
+
+.identificadores {
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+
+}
+
+.identificacao1,
+.identificacao2,
+.identificacao3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.campo-conteudo-identificacao1 {
+    width: 340px;
+    height: 32px;
+}
+
+.campo-conteudo-identificacao2 {
+    Width: 460px;
+    Height: 32px;
+}
+
+.campo-conteudo-identificacao3 {
+    Width: 12.6rem;
+    Height: 32px;
+}
+
+.foto-perfil {
+    width: 70px;
+    height: 50px;
+}
+
+.campos-estilizado {
+    border: 3px solid #231EFF2B;
+    border-left: 12px solid #231EFF2B;
+    border-right: 12px solid #231EFF2B;
+    padding: 0 10px;
+}
+
+.campos-estilizado:focus-visible {
+    outline: none;
+}
+
+.identificadores-secundarios {
+    display: flex;
+    padding: 1rem;
+    gap: 1.7rem;
+
+}
+
+.identificacao-secundaria1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.campo-conteudo-secundario1 {
+    resize: none;
+    width: 71.2rem;
+    height: 8rem;
+}
+
+.final {
+    background-color: steelblue;
+    height: 2rem;
+    margin: 0 0rem;
+    width: 79rem;
+}
+
+
+
+@media (width<=1172px) {
+    .apresentacao-tela-principal {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .conteudo-botao {
+        font-size: 16px;
+    }
+    .conteudo-botao {
+        width: 50%;
+
+    }
+
+    .btn-responsivo {
+        box-shadow: 0px 4px 9px black;
+        background-color: steelblue;
+        z-index: 1;
+    }
+
+    .btn-navbar {
+        width: 100%;
+        margin: 0 0.5rem;
+    }
+
+    .opcoes-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .menu-opcoes-inicial {
+        margin: 0% 0%;
+        width: 123%;
+        margin-bottom: 3%;
+    }
+
+    .apresentacao-perfil {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 4px 9px black;
+        margin-bottom: 3%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .identificadores {
+        display: flex;
+        padding: 1%;
+        flex-direction: column;
+        width: 50%;
+        gap: 5px;
+    }
+
+    .campo-conteudo-identificacao1,
+    .campo-conteudo-identificacao2,
+    .campo-conteudo-identificacao3 {
+        width: 100%;
+    }
+
+    .identificadores-secundarios {
+        display: flex;
+        padding: 1%;
+        width: 50%;
+    }
+
+    .campo-conteudo-secundario1 {
+        width: 100%;
+        height: auto;
+
+    }
+    .nomes{
+        font-size: 12px;
+    }
+    .final {
+        width: 100%;
+        margin: 0% 0%;
+    }
+}
+
+@media (width<=991px) {
+    .foto-perfil {
+        display: none;
+    }
+
+    .separa {
+        display: none;
+    }
+
+    .menu-opcoes-inicial {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}

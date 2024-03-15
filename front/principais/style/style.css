@@ -1,0 +1,724 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 80vh;
+  background-color: lavender;
+}
+
+.pagina-inicial {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: lavender;
+}
+
+.apresentacao {
+  align-items: center;
+  padding: 10% 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.apresentacao-inicio {
+  text-align: center;
+  width: 56rem;
+  height: 24rem;
+  background-color: white;
+  border-radius: 21px;
+  box-shadow: 0px 4px 9px black;
+  display: flex;
+}
+
+.apresentacao-titulo {
+  display: flex;
+  align-items: center;
+  padding: 1% 2%;
+  width: 20rem;
+}
+
+.apresentacao-titulo-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 2%;
+}
+
+.btn-responsivo {
+  box-shadow: 0px 4px 9px black;
+  background-color: steelblue;
+  z-index: 1;
+}
+
+.texto-apresentacao-login {
+  font-family: "Krona One", sans-serif;
+  display: flex;
+  align-items: center;
+  color: #231eff;
+  padding: 0 2%;
+}
+
+.texto-barra-login {
+  font-family: "Krona One", sans-serif;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  color: #f6f6f6;
+  padding: 0 0%;
+}
+
+.texto-barra-login:hover {
+  color: #1e90ff;
+}
+
+.formulario-login {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apresentacao-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+  height: 100%;
+}
+
+.apresentacao-login-modal {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 6rem;
+}
+
+.imagem-login {
+  width: 4rem;
+  height: 5rem;
+}
+
+.avaliadores {
+  height: 5rem;
+  width: 38rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.campo-avaliacao {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 26rem;
+}
+
+.login-senha {
+  border-radius: 20px;
+  background-color: white;
+  width: 21rem;
+  height: 4rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.login-senha::placeholder {
+  color: #231eff;
+}
+
+.esqueceu-senha {
+  text-align: end;
+  color: #231eff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Krona One", sans-serif;
+  margin-bottom: 20px;
+}
+
+.botao-entrar {
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #231eff;
+  width: 21rem;
+  height: 3rem;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-entrar:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.apresentacao-direita {
+  padding: 5% 4%;
+}
+
+.imagem-direita {
+  width: 380px;
+  height: 330px;
+}
+
+.barra-opcoes-inicio {
+  background-color: steelblue;
+  margin-bottom: 20px;
+}
+
+.menu-opcoes-inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: steelblue;
+  text-align: center;
+  height: 4rem;
+  width: 78rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.btn-navbar {
+  border: 2px solid;
+  background-color: white;
+  gap: 1;
+  margin: 0px 1rem;
+  border-radius: 23px;
+  width: 11rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apresentacao-tela-principal {
+  min-height: calc(100vh - 7rem);
+  padding: 0% 5%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+.modaal {
+  display: flex;
+  align-items: center;
+}
+
+.apresentacoes {
+  width: 50rem;
+  height: 34rem;
+  background-color: white;
+  box-shadow: 0px 4px 9px black;
+}
+
+.titulo-apresentacao {
+  background-color: steelblue;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.texto-apresentacao {
+  color: #f6f6f6;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+}
+
+.agenda {
+  width: 25rem;
+  height: 22rem;
+  background-color: white;
+}
+
+.titulo-agenda {
+  background-color: steelblue;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 27px;
+}
+
+.texto-agenda {
+  color: #f6f6f6;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+}
+
+.agendamento {
+  width: 25rem;
+  height: 18rem;
+  box-shadow: 0px 4px 9px black;
+  display: flex;
+  text-align: center;
+  gap: 19px;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 1%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.texto-agendamento1,
+.texto-agendamento2 {
+  background-color: #f4221461;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-agendamento3,
+.texto-agendamento6 {
+  background-color: #4ef41461;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-agendamento4 {
+  background-color: #191b1961;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-agendamento5 {
+  background-color: #1914f461;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.legenda {
+  width: 25rem;
+  height: 11rem;
+  background-color: white;
+  box-shadow: 0px 4px 9px black;
+}
+
+.legendas {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 8rem;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.titulo-legenda {
+  background-color: steelblue;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 27px;
+}
+
+.agenda-legenda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.texto-legendas1 {
+  background-color: #4ef41461;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-legendas2 {
+  background-color: #f4221461;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-legendas3 {
+  background-color: #1914f461;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-legendas4 {
+  background-color: #191b1961;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  width: 350px;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.texto-legenda {
+  color: #f6f6f6;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+}
+
+.apresentacoes-clientes {
+  width: 76rem;
+  height: 35rem;
+  background-color: white;
+  box-shadow: 0px 4px 9px black;
+  margin-bottom: 2px;
+}
+
+.botao-cadastrar {
+  font-size: 26px;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  width: 75rem;
+  padding: 1%;
+}
+
+.botao-recuperar {
+  font-size: 26px;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  padding: 0% 4%;
+  gap: 16px;
+}
+
+.conteudo-botao:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.conteudo-botao {
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #231eff;
+  width: 18rem;
+  height: 3rem;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-botao-recuperar-senha {
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #231eff;
+  width: 20.9rem;
+  height: 3rem;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-botao-recuperar-senha:focus-visible {
+  outline: none;
+}
+
+.avaliacoes {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 49rem;
+  height: 27rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.logo {
+  width: 70px;
+  height: 50px;
+}
+
+.campos-login {
+  padding: 0 10px;
+}
+
+.campos-login:focus-visible {
+  outline: none;
+}
+
+.campos-estilizado {
+  border: 3px solid #231eff2b;
+  border-left: 12px solid #231eff2b;
+  border-right: 12px solid #231eff2b;
+  padding: 0 10px;
+}
+
+.campos-estilizado-avaliadores {
+  border: 2px solid #231eff2b;
+  border-left: 12px solid #231eff2b;
+  border-right: 12px solid #231eff2b;
+}
+
+.campos-estilizado-bloqueado {
+  border: 3px solid #231eff2b;
+  border-left: 12px solid #231eff2b;
+  border-right: 12px solid #231eff2b;
+  background-color: darkgrey;
+  padding: 0 10px;
+}
+
+.campos-estilizado:focus-visible {
+  outline: none;
+}
+
+.botoes {
+  border-radius: 20px;
+  text-decoration: none;
+  width: 18rem;
+  height: 3rem;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apresentacao-login-modal {
+  padding: 0 50%;
+}
+
+.nomes-modal {
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: #231eff;
+}
+
+.nomes {
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  color: #231eff;
+}
+
+.nomes-avaliadores {
+  font-family: "Krona One", sans-serif;
+  font-size: 12px;
+  color: #231eff;
+}
+
+.texto-avaliadores {
+  color: black;
+  padding: 0rem 1rem;
+  font-family: "Krona One", sans-serif;
+  font-size: 12px;
+}
+
+.final {
+  background-color: steelblue;
+  height: 2rem;
+  margin: 0 0rem;
+  width: 79rem;
+}
+
+@media (width<=1600px) {
+  .apresentacao-tela-principal {
+    display: flex;
+  }
+
+  .menu-opcoes-inicial {
+    margin-bottom: 10px;
+  }
+
+  .apresentacoes {
+  }
+
+  .texto-agendamento1,
+  .texto-agendamento2,
+  .texto-agendamento3,
+  .texto-agendamento4,
+  .texto-agendamento5,
+  .texto-agendamento6 {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .texto-legendas1,
+  .texto-legendas2,
+  .texto-legendas3,
+  .texto-legendas4 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .nomes {
+    font-size: 12px;
+  }
+
+  .final {
+    margin: 0% 0%;
+  }
+}
+
+@media (width<=1172px) {
+  .apresentacao-tela-principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .apresentacoes {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 9px black;
+    margin-bottom: 3%;
+  }
+
+  .avaliacoes {
+    width: auto;
+  }
+
+  .avaliadores {
+    width: 70%;
+  }
+
+  .local-foto {
+    width: 36px;
+    height: 36px;
+  }
+
+  .agenda-legenda {
+    width: 100%;
+  }
+
+  .agenda {
+    width: auto;
+    margin-bottom: 3%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 4px 9px black;
+  }
+
+  .agendamento {
+    width: auto;
+    margin: 0;
+  }
+
+  .texto-agendamento1,
+  .texto-agendamento2,
+  .texto-agendamento3,
+  .texto-agendamento4,
+  .texto-agendamento5,
+  .texto-agendamento6 {
+    width: 50%;
+  }
+
+  .texto-legendas1,
+  .texto-legendas2,
+  .texto-legendas3,
+  .texto-legendas4 {
+    width: auto;
+  }
+
+  .legenda {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .legendas {
+    display: block;
+    gap: 15px;
+    align-items: center;
+    height: 8rem;
+    text-align: center;
+    padding: 3% 5px;
+    column-count: 2;
+  }
+
+  .menu-opcoes-inicial {
+    margin: 0% 0%;
+    width: 123%;
+    margin-bottom: 5%;
+  }
+
+  .nomes {
+    font-size: 12px;
+  }
+
+  .btn-navbar {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+
+  .opcoes-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .final {
+    width: 100%;
+    margin: 0% 0%;
+  }
+}
+
+@media (width<=991px) {
+  .apresentacao {
+    width: 100vh;
+  }
+
+  .apresentacao-inicio {
+    width: 50%;
+  }
+
+  .apresentacao-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-senha {
+    width: 100%;
+  }
+
+  .botao-entrar {
+    width: 100%;
+  }
+
+  .campos-login {
+    width: 100%;
+  }
+
+  .menu-opcoes-inicial {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .apresentacao-direita {
+    display: none;
+  }
+
+  .separa-login {
+    display: none;
+  }
+}

@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pagina-inicial-servicos {
+  min-height: 80vh;
+  background-color: lavender;
+}
+
+.menu-opcoes-inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: steelblue;
+  text-align: center;
+  height: 4rem;
+  width: 78rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.btn-navbar {
+  border: 2px solid;
+  background-color: white;
+  gap: 1;
+  margin: 0px 1rem;
+  border-radius: 23px;
+  width: 11rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-responsivo {
+  box-shadow: 0px 4px 9px black;
+  background-color: steelblue;
+  z-index: 1;
+}
+
+.marcacao {
+  padding: 0rem 4rem;
+}
+
+.barra-opcoes-inicio {
+  background-color: steelblue;
+  margin-bottom: 20px;
+}
+
+.menu-opcoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: white;
+  text-align: center;
+  height: 4rem;
+  width: 12rem;
+  margin: 0px 9px;
+  font-family: "Krona One", sans-serif;
+}
+.apresentacao-tela-principal {
+  align-items: center;
+  padding: 0% 5%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+.apresentacoes-produtos-cadastrar {
+  width: 76rem;
+  height: 68rem;
+  background-color: white;
+  box-shadow: 0px 4px 9px black;
+  margin-bottom: 2px;
+}
+
+.titulo-apresentacao {
+  background-color: steelblue;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.texto-apresentacao {
+  color: #f6f6f6;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+}
+.botao-cadastrar {
+  font-size: 26px;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  width: 75rem;
+  padding: 1%;
+}
+
+.conteudo-botao {
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #231eff;
+  width: 18rem;
+  height: 3rem;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.conteudo-botao:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.lista-produtos {
+  list-style: none;
+  padding: 0% 0%;
+  display: flex;
+  flex-direction: column;
+  width: 76rem;
+  gap: 11px;
+}
+
+.icones-foto {
+  font-size: 25px;
+}
+
+.nomes {
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  color: #231eff;
+}
+
+.nomes-modal {
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: #231eff;
+}
+
+.identificadores {
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+.identificacao1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.identificacao2,
+.identificacao3,
+.identificacao-registro,
+.identificacao-valor {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.campo-conteudo-servico-identificacao1 {
+  height: 32px;
+}
+
+.campos-estilizado-servico {
+  border: 3px solid #231eff2b;
+  border-left: 12px solid #231eff2b;
+  border-right: 12px solid #231eff2b;
+}
+
+.campos-estilizado-bloqueado {
+  border: 3px solid #231eff2b;
+  border-left: 12px solid #231eff2b;
+  border-right: 12px solid #231eff2b;
+  background-color: darkgrey;
+  padding: 0rem 0.75rem;
+}
+
+.campos-estilizado-servico:focus-visible {
+  outline: none;
+}
+
+.campo-conteudo-servico-identificacao2 {
+  width: 26rem;
+  height: 32px;
+}
+
+.campo-conteudo-servico-identificacao3 {
+  width: 53.7rem;
+  height: 32px;
+}
+
+.campo-conteudo-servico-identificacao4 {
+  width: 7rem;
+  height: 32px;
+}
+
+.identificadores-secundarios {
+  padding: 1rem 1rem;
+  gap: 3.7rem;
+}
+
+.identificacao-secundaria1,
+.identificacao-secundaria2,
+.identificacao-secundaria3 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.campo-conteudo-servico-secundario1,
+.campo-conteudo-servico-secundario2,
+.campo-conteudo-servico-secundario3 {
+  width: 10rem;
+  height: 32px;
+}
+
+.campo-conteudo-servico-secundario1 {
+  width: 46rem;
+  height: 32px;
+}
+
+#input-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.campo-conteudo-servico-secundario-sexo {
+  width: 7.5rem;
+  height: 32px;
+}
+
+.campo-conteudo-servico-secundario-promo {
+  width: 6.5rem;
+  height: 32px;
+}
+
+.identificadores-tercearios {
+  display: flex;
+  padding: 1rem;
+  gap: 1.7rem;
+}
+
+.identificacao-terceario1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.identificacao-terceario2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.identificacao-terceario3 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.campo-conteudo-servico-terceario1 {
+  width: 10.5rem;
+  height: 32px;
+}
+
+.campo-conteudo-servico-terceario2 {
+  width: 25.5rem;
+  height: 32px;
+}
+
+.campo-conteudo-servico-terceario3 {
+  width: 29.2rem;
+  height: 32px;
+}
+
+.identificadores-quaternarios {
+  display: flex;
+  padding: 0rem 1rem;
+  gap: 5.4rem;
+}
+
+.identificacao-quaternario1,
+.identificacao-quaternario2,
+.identificacao-quaternario3,
+.identificacao-atendimento {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.campo-conteudo-servico-quaternario1 {
+  display: inline-block;
+  width: 12.5rem;
+  height: 10rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.campo-conteudo-servico-quaternario1-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.campo-conteudo-servico-quaternario2 {
+  width: 71rem;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1rem;
+}
+
+.campo-conteudo-servico-quaternario3 {
+  width: 22.2rem;
+  height: 32px;
+}
+
+.botao-cadastrar-produto {
+  font-size: 26px;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  padding: 3% 4%;
+  gap: 16px;
+}
+
+.texto-barra-login {
+  font-family: "Krona One", sans-serif;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  color: #f6f6f6;
+  padding: 0 0%;
+}
+
+.foto-perfil {
+  width: 70px;
+  height: 50px;
+}
+
+.apresentacao1 {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+}
+
+.identificacao-esquerda {
+  display: flex;
+  flex-wrap: wrap;
+  width: 58rem;
+}
+
+.apresentacao2 {
+  display: flex;
+  padding: 0rem 1rem;
+  gap: 32px;
+}
+
+.campo-conteudo-servico-identificacao-registro,
+.campo-conteudo-servico-especialidade {
+  width: 8rem;
+  height: 32px;
+}
+
+.apresentacao3 {
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+.titulos-campos {
+  padding: 0rem 1rem;
+  height: 3rem;
+  font-family: "Krona One", sans-serif;
+  font-size: 16px;
+  color: #231eff;
+}
+
+.campos-agendamento {
+  display: flex;
+  gap: 66px;
+  padding: 0rem 0rem;
+  justify-content: center;
+}
+
+.dias-semana {
+  width: 6rem;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.campo-horas {
+  height: 3rem;
+}
+
+.campos-estilizado-agendamento {
+  height: 4rem;
+}
+
+.botao-cadastrar-servico {
+  display: flex;
+  justify-content: end;
+  padding: 3% 2%;
+  gap: 16px;
+}
+
+.final {
+  background-color: steelblue;
+  height: 2rem;
+  margin: 0 0rem;
+  width: 79rem;
+}
+
+@media (width<=1172px) {
+  .apresentacao-tela-principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .identificadores-colunas-tabela {
+    display: none;
+  }
+
+  .agendamento-responsivo {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    gap: 15px;
+    margin-bottom: 26px;
+    justify-content: center;
+  }
+
+  .apresentacoes-produtos-cadastrar {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 11%;
+  }
+
+  .menu-opcoes-inicial {
+    margin: 0% 0%;
+    width: 123%;
+    margin-bottom: 5%;
+  }
+
+  .btn-navbar {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+
+  .opcoes-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .apresentacao1 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem 1%;
+    align-items: center;
+  }
+
+  .apresentacao2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0rem 1%;
+    gap: 5px;
+  }
+
+  .apresentacao3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0rem 1rem;
+    gap: 5px;
+  }
+
+  .campo-conteudo-servico-identificacao2,
+  .campo-conteudo-servico-secundario2,
+  .campo-conteudo-servico-identificacao3,
+  .campo-conteudo-servico-especialidade {
+    width: 100%;
+  }
+
+  .campo-conteudo-servico-identificacao-registro,
+  .campo-conteudo-servico-secundario-promo,
+  .campo-conteudo-servico-identificacao4 {
+    width: 100%;
+  }
+
+  .campo-conteudo-servico-especialidade {
+    width: 100%;
+  }
+
+  .campo-conteudo-servico-secundario-sexo {
+    width: 100%;
+  }
+
+  .campo-conteudo-servico-quaternario2 {
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+  }
+
+  .identificacao-esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .identificacao-quaternario2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .identificacao-secundaria2,
+  .identificacao-secundaria3,
+  .identificacao-registro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .identificacao-atendimento {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .identificacao-valor {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .nomes {
+    font-size: 12px;
+  }
+
+  .final {
+    width: 100%;
+    margin: 0% 0%;
+  }
+}
+
+@media (width<=991px) {
+  .menu-opcoes-inicial {
+    display: flex;
+    justify-content: space-between;
+  }
+}
